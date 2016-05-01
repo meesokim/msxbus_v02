@@ -906,9 +906,9 @@ D6
 Text Label 10150 3100 0    60   ~ 0
 CLOCK
 Text Label 10150 3200 0    60   ~ 0
-SW1
+SWOUT
 Text Label 10150 3300 0    60   ~ 0
-SW2
+SW1
 $Comp
 L MSX_SLOT P2
 U 1 1 571D24FB
@@ -1175,7 +1175,7 @@ GND
 Text Label 9050 6050 0    60   ~ 0
 GND
 Text Label 10150 4050 0    60   ~ 0
-SLTSL1
+SLTSL2
 Text Label 10150 4150 0    60   ~ 0
 RFSH
 Text Label 10150 4250 0    60   ~ 0
@@ -1213,7 +1213,7 @@ D6
 Text Label 10150 5950 0    60   ~ 0
 CLOCK
 Text Label 10150 6050 0    60   ~ 0
-SW1
+SWOUT
 Text Label 10150 6150 0    60   ~ 0
 SW2
 Wire Bus Line
@@ -1288,17 +1288,17 @@ Text Label 7350 5150 0    60   ~ 0
 D3
 Text Label 7350 5250 0    60   ~ 0
 D2
-Text Label 7350 5350 0    60   ~ 0
-D7
-Text Label 7350 5450 0    60   ~ 0
-D6
 Text Label 7350 5550 0    60   ~ 0
-CLOCK
+D7
 Text Label 7350 5650 0    60   ~ 0
-SWOUT
+D6
 Text Label 7350 5750 0    60   ~ 0
-SW2
+CLOCK
 Text Label 7350 5850 0    60   ~ 0
+SWOUT
+Text Label 5100 5550 0    60   ~ 0
+SW2
+Text Label 5100 5650 0    60   ~ 0
 SW1
 Wire Wire Line
 	7300 4250 7650 4250
@@ -1366,63 +1366,61 @@ Text Label 3350 3400 0    60   ~ 0
 RG20
 Text Label 3350 3500 0    60   ~ 0
 RG21
-Text Label 5100 4850 0    60   ~ 0
-RG04
-Text Label 5100 2050 0    60   ~ 0
+Text Label 5100 1750 0    60   ~ 0
 RG02
-Text Label 5100 2150 0    60   ~ 0
+Text Label 5100 1850 0    60   ~ 0
 RG03
-Text Label 5100 2250 0    60   ~ 0
+Text Label 5100 1950 0    60   ~ 0
 RG04
-Text Label 5100 2350 0    60   ~ 0
-RG14
-Text Label 5100 2450 0    60   ~ 0
+Text Label 5100 2150 0    60   ~ 0
 RG15
-Text Label 5100 2550 0    60   ~ 0
-RG17
-Text Label 5100 2650 0    60   ~ 0
+Text Label 5100 2050 0    60   ~ 0
+RG14
+Text Label 5100 2350 0    60   ~ 0
 RG18
-Text Label 5100 2750 0    60   ~ 0
+Text Label 5100 2250 0    60   ~ 0
+RG17
+Text Label 5100 2450 0    60   ~ 0
 RG27
-Text Label 5100 2850 0    60   ~ 0
+Text Label 5100 2550 0    60   ~ 0
 RG22
-Text Label 5100 2950 0    60   ~ 0
+Text Label 5100 2650 0    60   ~ 0
 RG23
-Text Label 5100 3050 0    60   ~ 0
+Text Label 5100 2750 0    60   ~ 0
 RG24
-Text Label 5100 3150 0    60   ~ 0
+Text Label 5100 2850 0    60   ~ 0
 RG10
-Text Label 5100 3250 0    60   ~ 0
+Text Label 5100 2950 0    60   ~ 0
 RG09
-Text Label 5100 3350 0    60   ~ 0
+Text Label 5100 3050 0    60   ~ 0
 RG25
-Text Label 5100 3450 0    60   ~ 0
+Text Label 5100 3150 0    60   ~ 0
 RG11
-Text Label 5100 3550 0    60   ~ 0
+Text Label 5100 3250 0    60   ~ 0
 RG08
-Text Label 5100 3650 0    60   ~ 0
+Text Label 5100 3350 0    60   ~ 0
 RG07
-Text Label 5100 3750 0    60   ~ 0
+Text Label 5100 3450 0    60   ~ 0
 RG00
-Text Label 5100 3850 0    60   ~ 0
+Text Label 5100 3550 0    60   ~ 0
 RG01
-Text Label 5100 3950 0    60   ~ 0
+Text Label 5100 3650 0    60   ~ 0
 RG05
-Text Label 5100 4050 0    60   ~ 0
+Text Label 5100 3750 0    60   ~ 0
 RG06
-Text Label 5100 4150 0    60   ~ 0
+Text Label 5100 3850 0    60   ~ 0
 RG12
-Text Label 5100 4250 0    60   ~ 0
+Text Label 5100 3950 0    60   ~ 0
 RG13
-Text Label 5100 4350 0    60   ~ 0
+Text Label 5100 4050 0    60   ~ 0
 RG19
-Text Label 5100 4450 0    60   ~ 0
+Text Label 5100 4150 0    60   ~ 0
 RG16
-Text Label 5100 4550 0    60   ~ 0
+Text Label 5100 4250 0    60   ~ 0
 RG26
-Text Label 5100 4650 0    60   ~ 0
+Text Label 5100 4350 0    60   ~ 0
 RG20
-Text Label 5100 4750 0    60   ~ 0
+Text Label 5100 4450 0    60   ~ 0
 RG21
 Wire Wire Line
 	5000 1750 5450 1750
@@ -1436,4 +1434,14 @@ Text Label 7350 2050 0    60   ~ 0
 CS2
 Text Label 7350 2150 0    60   ~ 0
 CS12
+Text Label 5100 1550 0    60   ~ 0
+GND
+Text Label 5100 1650 0    60   ~ 0
+GND
+Text Label 5100 5850 0    60   ~ 0
+GND
+Text Label 7350 5450 0    60   ~ 0
+D4
+Text Label 7350 5350 0    60   ~ 0
+D5
 $EndSCHEMATC

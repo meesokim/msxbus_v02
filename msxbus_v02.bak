@@ -47,34 +47,34 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L RPi_GPIO J?
+L RPi_GPIO J1
 U 1 1 571CB697
 P 1650 1600
-F 0 "J?" H 2400 1850 60  0000 C CNN
+F 0 "J1" H 2400 1850 60  0000 C CNN
 F 1 "RPi_GPIO" H 2400 1750 60  0000 C CNN
-F 2 "" H 1650 1600 60  0000 C CNN
+F 2 "MSX:RASPI_EXTENSION" H 1650 1600 60  0000 C CNN
 F 3 "" H 1650 1600 60  0000 C CNN
 	1    1650 1600
 	1    0    0    -1  
 $EndComp
 $Comp
-L CPLD U?
+L CPLD U1
 U 1 1 571CFA77
 P 6400 3400
-F 0 "U?" H 6250 5550 60  0000 C CNN
+F 0 "U1" H 6250 5550 60  0000 C CNN
 F 1 "CPLD" H 6400 4000 60  0000 C CNN
-F 2 "" H 6250 5400 60  0000 C CNN
+F 2 "MSX:cldc88pin" H 6250 5400 60  0000 C CNN
 F 3 "" H 6250 5400 60  0000 C CNN
 	1    6400 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L MSX_SLOT P?
+L MSX_SLOT P1
 U 1 1 571CDE63
 P 9750 2300
-F 0 "P?" H 9750 3600 50  0000 C CNN
+F 0 "P1" H 9750 3600 50  0000 C CNN
 F 1 "MSX_SLOT" V 9750 2250 50  0000 C CNN
-F 2 "" H 9600 1550 50  0000 C CNN
+F 2 "MSX:MSX_SLOT" H 9600 1550 50  0000 C CNN
 F 3 "" H 9600 1550 50  0000 C CNN
 	1    9750 2300
 	1    0    0    -1  
@@ -486,25 +486,19 @@ Wire Wire Line
 Wire Wire Line
 	7300 1850 7650 1850
 Wire Wire Line
-	7300 1950 7650 1950
-Wire Wire Line
-	7300 2050 7650 2050
-Wire Wire Line
-	7300 2150 7650 2150
-Wire Wire Line
 	7300 2250 7650 2250
 Wire Wire Line
 	7300 2350 7650 2350
 Wire Wire Line
 	7300 2450 7650 2450
 Wire Wire Line
-	7300 2550 7650 2550
+	7300 2650 7650 2650
 Wire Wire Line
 	7300 2750 7650 2750
 Wire Wire Line
 	7300 2850 7650 2850
 Wire Wire Line
-	7300 2950 7650 2950
+	7300 2550 7650 2550
 Wire Wire Line
 	7300 3050 7650 3050
 Wire Wire Line
@@ -524,11 +518,11 @@ Wire Wire Line
 Wire Wire Line
 	7300 3850 7650 3850
 Wire Wire Line
+	7300 3950 7650 3950
+Wire Wire Line
 	7300 4050 7650 4050
 Wire Wire Line
 	7300 4150 7650 4150
-Wire Wire Line
-	7300 4250 7650 4250
 Wire Wire Line
 	7300 4350 7650 4350
 Wire Wire Line
@@ -561,6 +555,12 @@ Wire Wire Line
 	7300 5750 7650 5750
 Wire Wire Line
 	7300 5850 7650 5850
+Wire Wire Line
+	7300 1950 7650 1950
+Wire Wire Line
+	7300 2050 7650 2050
+Wire Wire Line
+	7300 2150 7650 2150
 Wire Wire Line
 	9000 1100 9350 1100
 Wire Wire Line
@@ -906,16 +906,16 @@ D6
 Text Label 10150 3100 0    60   ~ 0
 CLOCK
 Text Label 10150 3200 0    60   ~ 0
-SW1
+SWOUT
 Text Label 10150 3300 0    60   ~ 0
-SW2
+SW1
 $Comp
-L MSX_SLOT P?
+L MSX_SLOT P2
 U 1 1 571D24FB
 P 9750 5150
-F 0 "P?" H 9750 6450 50  0000 C CNN
+F 0 "P2" H 9750 6450 50  0000 C CNN
 F 1 "MSX_SLOT" V 9750 5100 50  0000 C CNN
-F 2 "" H 9600 4400 50  0000 C CNN
+F 2 "MSX:MSX_SLOT" H 9600 4400 50  0000 C CNN
 F 3 "" H 9600 4400 50  0000 C CNN
 	1    9750 5150
 	1    0    0    -1  
@@ -1175,7 +1175,7 @@ GND
 Text Label 9050 6050 0    60   ~ 0
 GND
 Text Label 10150 4050 0    60   ~ 0
-SLTSL1
+SLTSL2
 Text Label 10150 4150 0    60   ~ 0
 RFSH
 Text Label 10150 4250 0    60   ~ 0
@@ -1213,7 +1213,7 @@ D6
 Text Label 10150 5950 0    60   ~ 0
 CLOCK
 Text Label 10150 6050 0    60   ~ 0
-SW1
+SWOUT
 Text Label 10150 6150 0    60   ~ 0
 SW2
 Wire Bus Line
@@ -1228,84 +1228,84 @@ Text Label 7350 1750 0    60   ~ 0
 SLTSL1
 Text Label 7350 1850 0    60   ~ 0
 SLTSL2
-Text Label 7350 1950 0    60   ~ 0
-RFSH
-Text Label 7350 2050 0    60   ~ 0
-WAIT
-Text Label 7350 2150 0    60   ~ 0
-INT
 Text Label 7350 2250 0    60   ~ 0
-M1
+RFSH
 Text Label 7350 2350 0    60   ~ 0
-BUSDIR
+WAIT
 Text Label 7350 2450 0    60   ~ 0
-IORQ
+INT
 Text Label 7350 2650 0    60   ~ 0
-MERQ
+M1
 Text Label 7350 2750 0    60   ~ 0
-WR
+BUSDIR
 Text Label 7350 2850 0    60   ~ 0
-RD
+IORQ
 Text Label 7350 2950 0    60   ~ 0
-RESET
+MERQ
 Text Label 7350 3050 0    60   ~ 0
-A9
+WR
 Text Label 7350 3150 0    60   ~ 0
-A15
+RD
 Text Label 7350 3250 0    60   ~ 0
-A11
+RESET
 Text Label 7350 3350 0    60   ~ 0
-A10
+A9
 Text Label 7350 3450 0    60   ~ 0
-A7
+A15
 Text Label 7350 3550 0    60   ~ 0
-A6
+A11
 Text Label 7350 3650 0    60   ~ 0
-A12
+A10
 Text Label 7350 3750 0    60   ~ 0
-A8
+A7
 Text Label 7350 3850 0    60   ~ 0
-A14
+A6
 Text Label 7350 3950 0    60   ~ 0
-A13
+A12
 Text Label 7350 4050 0    60   ~ 0
-A1
+A8
 Text Label 7350 4150 0    60   ~ 0
-A0
+A14
 Text Label 7350 4250 0    60   ~ 0
-A3
+A13
 Text Label 7350 4350 0    60   ~ 0
-A2
+A1
 Text Label 7350 4450 0    60   ~ 0
-A5
+A0
 Text Label 7350 4550 0    60   ~ 0
-A4
+A3
 Text Label 7350 4650 0    60   ~ 0
-D1
+A2
 Text Label 7350 4750 0    60   ~ 0
-D0
+A5
 Text Label 7350 4850 0    60   ~ 0
-D3
+A4
 Text Label 7350 4950 0    60   ~ 0
-D2
+D1
 Text Label 7350 5050 0    60   ~ 0
-D7
+D0
 Text Label 7350 5150 0    60   ~ 0
-D6
+D3
 Text Label 7350 5250 0    60   ~ 0
-CLOCK
-Text Label 7350 5350 0    60   ~ 0
-SWOUT
-Text Label 7350 5450 0    60   ~ 0
-SW2
+D2
 Text Label 7350 5550 0    60   ~ 0
+D7
+Text Label 7350 5650 0    60   ~ 0
+D6
+Text Label 7350 5750 0    60   ~ 0
+CLOCK
+Text Label 7350 5850 0    60   ~ 0
+SWOUT
+Text Label 5100 5550 0    60   ~ 0
+SW2
+Text Label 5100 5650 0    60   ~ 0
 SW1
 Wire Wire Line
-	7300 3950 7650 3950
+	7300 4250 7650 4250
 Text Label 5100 5750 0    60   ~ 0
 3V3
 Wire Wire Line
-	7300 2650 7650 2650
+	7300 2950 7650 2950
 Text Label 1200 1700 0    60   ~ 0
 RG02
 Text Label 1200 1800 0    60   ~ 0
@@ -1366,63 +1366,61 @@ Text Label 3350 3400 0    60   ~ 0
 RG20
 Text Label 3350 3500 0    60   ~ 0
 RG21
-Text Label 5100 4850 0    60   ~ 0
+Text Label 5100 1750 0    60   ~ 0
+RG02
+Text Label 5100 1850 0    60   ~ 0
+RG03
+Text Label 5100 1950 0    60   ~ 0
 RG04
 Text Label 5100 2050 0    60   ~ 0
-RG02
-Text Label 5100 2150 0    60   ~ 0
-RG03
-Text Label 5100 2250 0    60   ~ 0
-RG04
-Text Label 5100 2350 0    60   ~ 0
-RG14
-Text Label 5100 2450 0    60   ~ 0
 RG15
-Text Label 5100 2550 0    60   ~ 0
-RG17
-Text Label 5100 2650 0    60   ~ 0
+Text Label 5100 2150 0    60   ~ 0
+RG14
+Text Label 5100 2250 0    60   ~ 0
 RG18
-Text Label 5100 2750 0    60   ~ 0
+Text Label 5100 2350 0    60   ~ 0
+RG17
+Text Label 5100 2450 0    60   ~ 0
 RG27
-Text Label 5100 2850 0    60   ~ 0
+Text Label 5100 2550 0    60   ~ 0
 RG22
-Text Label 5100 2950 0    60   ~ 0
+Text Label 5100 2650 0    60   ~ 0
 RG23
-Text Label 5100 3050 0    60   ~ 0
+Text Label 5100 2750 0    60   ~ 0
 RG24
-Text Label 5100 3150 0    60   ~ 0
+Text Label 5100 2850 0    60   ~ 0
 RG10
-Text Label 5100 3250 0    60   ~ 0
+Text Label 5100 2950 0    60   ~ 0
 RG09
-Text Label 5100 3350 0    60   ~ 0
+Text Label 5100 3050 0    60   ~ 0
 RG25
-Text Label 5100 3450 0    60   ~ 0
+Text Label 5100 3150 0    60   ~ 0
 RG11
-Text Label 5100 3550 0    60   ~ 0
+Text Label 5100 3250 0    60   ~ 0
 RG08
-Text Label 5100 3650 0    60   ~ 0
+Text Label 5100 3350 0    60   ~ 0
 RG07
-Text Label 5100 3750 0    60   ~ 0
+Text Label 5100 3450 0    60   ~ 0
 RG00
-Text Label 5100 3850 0    60   ~ 0
+Text Label 5100 3550 0    60   ~ 0
 RG01
-Text Label 5100 3950 0    60   ~ 0
+Text Label 5100 3650 0    60   ~ 0
 RG05
-Text Label 5100 4050 0    60   ~ 0
+Text Label 5100 3750 0    60   ~ 0
 RG06
-Text Label 5100 4150 0    60   ~ 0
+Text Label 5100 3850 0    60   ~ 0
 RG12
-Text Label 5100 4250 0    60   ~ 0
+Text Label 5100 3950 0    60   ~ 0
 RG13
-Text Label 5100 4350 0    60   ~ 0
+Text Label 5100 4050 0    60   ~ 0
 RG19
-Text Label 5100 4450 0    60   ~ 0
+Text Label 5100 4150 0    60   ~ 0
 RG16
-Text Label 5100 4550 0    60   ~ 0
+Text Label 5100 4250 0    60   ~ 0
 RG26
-Text Label 5100 4650 0    60   ~ 0
+Text Label 5100 4350 0    60   ~ 0
 RG20
-Text Label 5100 4750 0    60   ~ 0
+Text Label 5100 4450 0    60   ~ 0
 RG21
 Wire Wire Line
 	5000 1750 5450 1750
@@ -1430,4 +1428,20 @@ Wire Wire Line
 	5000 1850 5450 1850
 Wire Wire Line
 	5000 1950 5450 1950
+Text Label 7350 1950 0    60   ~ 0
+CS1
+Text Label 7350 2050 0    60   ~ 0
+CS2
+Text Label 7350 2150 0    60   ~ 0
+CS12
+Text Label 5100 1550 0    60   ~ 0
+GND
+Text Label 5100 1650 0    60   ~ 0
+GND
+Text Label 5100 5850 0    60   ~ 0
+GND
+Text Label 7350 5450 0    60   ~ 0
+D4
+Text Label 7350 5350 0    60   ~ 0
+D5
 $EndSCHEMATC
